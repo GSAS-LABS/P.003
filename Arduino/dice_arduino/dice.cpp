@@ -54,15 +54,25 @@ bool selectingDice = false;
 // ============================================================
 
 bool diceSelectionAnimation = false;
+bool diceSelectionDisplayOn = false;
 
 uint8_t diceSelectionBlinkCount = 0;
-
-bool diceSelectionDisplayOn = false;
 
 unsigned long diceSelectionAnimationTime = 0;
 
 constexpr unsigned long DICE_SELECTION_BLINK_MS = 150;
 constexpr uint8_t DICE_SELECTION_BLINKS = 3;
+
+// ============================================================
+// Edit mode animation
+// ============================================================
+
+bool diceEditAnimation = false;
+bool diceEditDisplayOn = true;
+
+unsigned long diceEditAnimationTime = 0;
+
+constexpr unsigned long DICE_EDIT_BLINK_MS = 500;
 
 // ============================================================
 // Dice display
@@ -104,7 +114,10 @@ void displayNextDiceType() {
             editingDice = DiceType::D4;
             break;
     }
+
     displayClear();
+    diceEditDisplayOn = true;
+    diceEditAnimationTime = millis();
     displayDiceType(editingDice);
 }
 
@@ -145,9 +158,9 @@ void startRoll() {
         initializeRandom();
     }
 
-    displayClear();
-
     rolling = true;
+
+    displayClear();
 
     rollStartTime = millis();
     rollLastStepTime = millis();
@@ -164,10 +177,15 @@ void handleRoll() {
 
     // End of animation
     if (now - rollStartTime >= ROLL_ANIMATION_MS) {
-        const uint8_t result = random(1, diceMaxValue(selectedDice) + 1);
+        const uint8_t result = random(
+            1,
+            diceMaxValue(selectedDice) + 1
+        );
 
         displayNumber(result);
+
         rolling = false;
+
         return;
     }
 
@@ -186,7 +204,7 @@ void handleRoll() {
 }
 
 // ============================================================
-// Selection animation
+// Dice Animation
 // ============================================================
 
 void startDiceSelectionAnimation() {
@@ -196,6 +214,14 @@ void startDiceSelectionAnimation() {
     diceSelectionAnimationTime = millis();
 
     displayDiceType(selectedDice);
+}
+
+void startDiceEditAnimation() {
+    diceEditAnimation = true;
+    diceEditDisplayOn = true;
+    diceEditAnimationTime = millis();
+
+    displayDiceType(editingDice);
 }
 
 void handleDiceSelectionAnimation() {
@@ -225,38 +251,71 @@ void handleDiceSelectionAnimation() {
     }
 }
 
+void handleDiceEditAnimation() {
+    if (!diceEditAnimation) {
+        return;
+    }
+
+    const unsigned long now = millis();
+
+    if (now - diceEditAnimationTime < DICE_EDIT_BLINK_MS) {
+        return;
+    }
+
+    diceEditAnimationTime = now;
+
+    if (diceEditDisplayOn) {
+        displayClear();
+        diceEditDisplayOn = false;
+    } else {
+        displayDiceType(editingDice);
+        diceEditDisplayOn = true;
+    }
+}
+
 // ============================================================
 // Button events
 // ============================================================
 
 void handleButtonEvent(ButtonEvent event) {
     switch (event) {
-        case ButtonEvent::TYPE_PRESSED:
-            if (!rolling && !selectingDice) {
+    case ButtonEvent::TYPE_SHORT_PRESS:
+        if (!rolling) {
+            if (!selectingDice) {
                 selectingDice = true;
                 editingDice = selectedDice;
-                 displayDiceType(editingDice);
-            }
-            break;
-        case ButtonEvent::TYPE_SHORT_PRESS:
-            if (selectingDice && !rolling) {
+                startDiceEditAnimation();
+            } else {
                 displayNextDiceType();
             }
-            break;
-        case ButtonEvent::TYPE_LONG_PRESS:
-            if (selectingDice && !rolling) {
-                selectedDice = editingDice;
-                selectingDice = false;
-                startDiceSelectionAnimation();
-            }
-            break;
-        case ButtonEvent::ROLL_PRESSED:
-            if (!rolling && !selectingDice) {
-                startRoll();
-            }
-            break;
-        case ButtonEvent::NONE:
-            break;
+        }
+        break;
+
+    case ButtonEvent::TYPE_LONG_PRESS:
+        if (selectingDice && !rolling) {
+            selectedDice = editingDice;
+
+            selectingDice = false;
+            diceEditAnimation = false;
+
+            startDiceSelectionAnimation();
+        }
+        break;
+
+    case ButtonEvent::ROLL_SHORT_PRESS:
+        if (!rolling && !selectingDice) {
+            startRoll();
+        }
+        break;
+
+    case ButtonEvent::ROLL_LONG_PRESS:
+        if (!rolling && !selectingDice) {
+            displayClear();
+        }
+        break;
+
+    case ButtonEvent::NONE:
+        break;
     }
 }
 
@@ -279,6 +338,7 @@ void diceUpdate() {
     const ButtonEvent event = buttonsUpdate();
     handleButtonEvent(event);
     handleRoll();
+    handleDiceEditAnimation();
     handleDiceSelectionAnimation();
 }
 

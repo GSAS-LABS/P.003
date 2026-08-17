@@ -5,10 +5,12 @@
 
 enum class ButtonEvent : uint8_t {
     NONE = 0,
-    TYPE_PRESSED,
+
     TYPE_SHORT_PRESS,
     TYPE_LONG_PRESS,
-    ROLL_PRESSED
+
+    ROLL_SHORT_PRESS,
+    ROLL_LONG_PRESS
 };
 
 void buttonsBegin();

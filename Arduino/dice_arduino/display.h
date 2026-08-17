@@ -5,12 +5,7 @@
 
 void displayBegin();
 void displayClear();
-
-void displayNumber(
-    uint8_t number,
-    bool decimalPoint = false
-);
-
+void displayNumber(uint8_t number, bool decimalPoint = false);
 void displaySegment(uint8_t segment);
 
 #endif

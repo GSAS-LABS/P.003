@@ -43,7 +43,6 @@ constexpr uint8_t ROLL_SEQUENCE[] = {
 // ============================================================
 
 bool rolling = false;
-bool rollResultDisplayed = false;
 bool randomSeedInitialized = false;
 
 unsigned long rollStartTime = 0;
@@ -80,7 +79,7 @@ bool diceEditDisplayOn = true;
 
 unsigned long diceEditAnimationTime = 0;
 
-constexpr unsigned long DICE_EDIT_BLINK_MS = 800;
+constexpr unsigned long DICE_EDIT_BLINK_MS = 500;
 
 // ============================================================
 // EEPROM
@@ -153,6 +152,7 @@ void displayNextDiceType() {
 
     displayClear();
     diceEditDisplayOn = true;
+    diceEditAnimationTime = millis();
     displayDiceType(editingDice);
 }
 
@@ -194,7 +194,6 @@ void startRoll() {
     }
 
     rolling = true;
-    rollResultDisplayed = false;
 
     displayClear();
 
@@ -213,13 +212,15 @@ void handleRoll() {
 
     // End of animation
     if (now - rollStartTime >= ROLL_ANIMATION_MS) {
-        if (!rollResultDisplayed) {
-            const uint8_t result = random(1, diceMaxValue(selectedDice) + 1);
+        const uint8_t result = random(
+            1,
+            diceMaxValue(selectedDice) + 1
+        );
 
-            displayNumber(result);
-            rollResultDisplayed = true;
-            rolling = false;
-        }
+        displayNumber(result);
+
+        rolling = false;
+
         return;
     }
 
@@ -313,34 +314,44 @@ void handleDiceEditAnimation() {
 
 void handleButtonEvent(ButtonEvent event) {
     switch (event) {
-        case ButtonEvent::TYPE_PRESSED:
-            if (!rolling && !selectingDice) {
+    case ButtonEvent::TYPE_SHORT_PRESS:
+        if (!rolling) {
+            if (!selectingDice) {
                 selectingDice = true;
                 editingDice = selectedDice;
                 startDiceEditAnimation();
-            }
-            break;
-        case ButtonEvent::TYPE_SHORT_PRESS:
-            if (selectingDice && !rolling) {
+            } else {
                 displayNextDiceType();
             }
-            break;
-        case ButtonEvent::TYPE_LONG_PRESS:
-            if (selectingDice && !rolling) {
-                selectedDice = editingDice;
-                saveDiceType(selectedDice);
-                selectingDice = false;
-                diceEditAnimation = false;
-                startDiceSelectionAnimation();
-            }
-            break;
-        case ButtonEvent::ROLL_PRESSED:
-            if (!rolling && !selectingDice) {
-                startRoll();
-            }
-            break;
-        case ButtonEvent::NONE:
-            break;
+        }
+        break;
+
+    case ButtonEvent::TYPE_LONG_PRESS:
+        if (selectingDice && !rolling) {
+            selectedDice = editingDice;
+            saveDiceType(selectedDice);
+
+            selectingDice = false;
+            diceEditAnimation = false;
+
+            startDiceSelectionAnimation();
+        }
+        break;
+
+    case ButtonEvent::ROLL_SHORT_PRESS:
+        if (!rolling && !selectingDice) {
+            startRoll();
+        }
+        break;
+
+    case ButtonEvent::ROLL_LONG_PRESS:
+        if (!rolling && !selectingDice) {
+            displayClear();
+        }
+        break;
+
+    case ButtonEvent::NONE:
+        break;
     }
 }
 

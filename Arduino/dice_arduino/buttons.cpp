@@ -34,7 +34,9 @@ bool buttonRollLastReading = HIGH;
 bool buttonRollStableState = HIGH;
 
 unsigned long buttonRollLastChangeTime = 0;
+unsigned long buttonRollPressedTime = 0;
 
+bool buttonRollLongPressHandled = false;
 // ============================================================
 // Initialization
 // ============================================================
@@ -51,7 +53,6 @@ void buttonsBegin() {
 ButtonEvent handleTypeButton() {
     const bool reading = digitalRead(PIN_BUTTON_TYPE);
 
-
     // Detect reading change
     if (reading != buttonTypeLastReading) {
         buttonTypeLastChangeTime = millis();
@@ -63,7 +64,6 @@ ButtonEvent handleTypeButton() {
         return ButtonEvent::NONE;
     }
 
-
     // Stable state changed
     if (reading != buttonTypeStableState) {
         buttonTypeStableState = reading;
@@ -73,30 +73,33 @@ ButtonEvent handleTypeButton() {
             buttonTypePressedTime = millis();
             buttonTypeLongPressHandled = false;
 
-            return ButtonEvent::TYPE_PRESSED;
+            return ButtonEvent::NONE;
         }
 
         // Button released
         const unsigned long pressDuration = millis() - buttonTypePressedTime;
 
-        if (pressDuration < LONG_PRESS_MS && !buttonTypeLongPressHandled) {
+        if (pressDuration < LONG_PRESS_MS &&
+            !buttonTypeLongPressHandled) {
             return ButtonEvent::TYPE_SHORT_PRESS;
         }
     }
 
-
     // Long press
-    if (buttonTypeStableState == LOW && !buttonTypeLongPressHandled) {
+    if (buttonTypeStableState == LOW &&
+        !buttonTypeLongPressHandled) {
+
         const unsigned long pressDuration = millis() - buttonTypePressedTime;
+
         if (pressDuration >= LONG_PRESS_MS) {
             buttonTypeLongPressHandled = true;
+
             return ButtonEvent::TYPE_LONG_PRESS;
         }
     }
 
     return ButtonEvent::NONE;
 }
-
 // ============================================================
 // ROLL button
 // ============================================================
@@ -121,7 +124,31 @@ ButtonEvent handleRollButton() {
 
         // Button pressed
         if (buttonRollStableState == LOW) {
-            return ButtonEvent::ROLL_PRESSED;
+            buttonRollPressedTime = millis();
+            buttonRollLongPressHandled = false;
+
+            return ButtonEvent::NONE;
+        }
+
+        // Button released
+        const unsigned long pressDuration = millis() - buttonRollPressedTime;
+
+        if (pressDuration < LONG_PRESS_MS &&
+            !buttonRollLongPressHandled) {
+            return ButtonEvent::ROLL_SHORT_PRESS;
+        }
+    }
+
+    // Long press
+    if (buttonRollStableState == LOW &&
+        !buttonRollLongPressHandled) {
+
+        const unsigned long pressDuration = millis() - buttonRollPressedTime;
+
+        if (pressDuration >= LONG_PRESS_MS) {
+            buttonRollLongPressHandled = true;
+
+            return ButtonEvent::ROLL_LONG_PRESS;
         }
     }
 
