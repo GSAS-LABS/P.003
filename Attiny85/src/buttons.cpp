@@ -46,6 +46,20 @@ void buttonsBegin() {
     pinMode(PIN_BUTTON_ROLL, INPUT_PULLUP);
 }
 
+void buttonsPrepareForSleep() {
+    buttonTypeLastReading = digitalRead(PIN_BUTTON_TYPE);
+    buttonTypeStableState = buttonTypeLastReading;
+    buttonTypeLastChangeTime = millis();
+    buttonTypePressedTime = 0;
+    buttonTypeLongPressHandled = false;
+
+    buttonRollLastReading = digitalRead(PIN_BUTTON_ROLL);
+    buttonRollStableState = buttonRollLastReading;
+    buttonRollLastChangeTime = millis();
+    buttonRollPressedTime = 0;
+    buttonRollLongPressHandled = false;
+}
+
 // ============================================================
 // TYPE button
 // ============================================================

@@ -1,4 +1,4 @@
-.PHONY: install build
+.PHONY: install build fuses upload
 
 PIO := pio
 
@@ -24,3 +24,11 @@ install:
 build:
 	@echo "==> Building firmware..."
 	@$(PIO) run
+
+fuses:
+	@echo "==> Programming ATtiny85 fuses..."
+	@$(PIO) run -t fuses
+
+upload:
+	@echo "==> Uploading firmware..."
+	@$(PIO) run -t upload

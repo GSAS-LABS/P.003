@@ -14,6 +14,7 @@ enum class ButtonEvent : uint8_t {
 };
 
 void buttonsBegin();
+void buttonsPrepareForSleep();
 
 ButtonEvent buttonsUpdate();
 

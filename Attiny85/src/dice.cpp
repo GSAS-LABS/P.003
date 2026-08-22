@@ -5,6 +5,7 @@
 
 #include "display.h"
 #include "buttons.h"
+#include "power.h"
 
 // ============================================================
 // EEPROM
@@ -12,6 +13,12 @@
 
 constexpr int EEPROM_DICE_TYPE_ADDRESS = 0;
 constexpr uint8_t EEPROM_MAGIC = 0xD6;
+
+// ============================================================
+// Power state
+// ============================================================
+
+bool sleepRequested = false;
 
 // ============================================================
 // Dice state
@@ -279,6 +286,7 @@ void handleDiceSelectionAnimation() {
 
         if (diceSelectionBlinkCount >= DICE_SELECTION_BLINKS) {
             diceSelectionAnimation = false;
+            sleepRequested = true;
         }
     } else {
         displayDiceType(selectedDice);
@@ -347,6 +355,7 @@ void handleButtonEvent(ButtonEvent event) {
     case ButtonEvent::ROLL_LONG_PRESS:
         if (!rolling && !selectingDice) {
             displayClear();
+            sleepRequested = true;
         }
         break;
 
@@ -365,6 +374,18 @@ void diceBegin() {
 }
 
 // ============================================================
+// Power
+// ============================================================
+
+void handleSleep() {
+    if (!sleepRequested) {
+        return;
+    }
+    sleepRequested = false;
+    powerSleep();
+}
+
+// ============================================================
 // Main update
 // ============================================================
 
@@ -374,6 +395,7 @@ void diceUpdate() {
     handleRoll();
     handleDiceEditAnimation();
     handleDiceSelectionAnimation();
+    handleSleep();
 }
 
 // ============================================================
