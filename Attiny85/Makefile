@@ -1,10 +1,9 @@
-.PHONY: install build fuses upload
+.PHONY: install update build fuses upload
 
 PIO := pio
 
 install:
 	@echo "==> Installing PlatformIO..."
-
 	@if ! command -v brew >/dev/null 2>&1; then \
 		echo "ERROR: Homebrew is not installed."; \
 		echo "Install Homebrew first: https://brew.sh"; \
@@ -18,6 +17,12 @@ install:
 		echo "==> PlatformIO already installed."; \
 	fi
 
+	@echo "==> PlatformIO version:"
+	@$(PIO) --version
+
+update:
+	@echo "==> Updating PlatformIO..."
+	@$(PIO) upgrade
 	@echo "==> PlatformIO version:"
 	@$(PIO) --version
 
