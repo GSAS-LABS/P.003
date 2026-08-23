@@ -676,7 +676,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
 			(at 161.29 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -758,7 +758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
 			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
