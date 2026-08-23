@@ -8,7 +8,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "01"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -214,9 +214,9 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "field_name_whitespace": "warning",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -234,14 +234,14 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "single_global_label": "warning",
       "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
@@ -416,7 +416,7 @@
         "uuid": "df58d102-266a-4360-93d3-4f9112ea1c17"
       }
     ],
-    "used_designators": "AFF1,U1-2,D1,Q1,SW1-3,R1-11,BT1",
+    "used_designators": "AFF1,SW1-3,U1-2,Q1,D1,R1-12,#FLG1-2,BT1",
     "variants": []
   },
   "sheets": [
@@ -438,7 +438,7 @@
     ],
     [
       "53cc1730-f527-46e2-84ce-397608e9107a",
-      "7 - Segment Display"
+      "Display 7 Segment"
     ]
   ],
   "text_variables": {},

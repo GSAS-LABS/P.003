@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "6f6696c7-b103-4cbb-91ef-660885efd0b0")
 	(paper "A4")
+	(title_block
+		(title "Attiny 85")
+		(date "2026-08-23")
+		(rev "01")
+		(company "GSAS - Labs")
+	)
 	(lib_symbols
 		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
 			(exclude_from_sim no)
@@ -415,23 +421,115 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 166.37 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf63caa2-57cc-44db-8994-8be55d30da3f")
+	)
+	(junction
+		(at 137.16 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc65a3a8-2907-4687-a154-7cb517616003")
+	)
 	(no_connect
-		(at 167.64 132.08)
+		(at 152.4 101.6)
 		(uuid "f83841ef-6924-4de4-90a7-1209c31dc6ef")
 	)
 	(wire
 		(pts
-			(xy 152.4 147.32) (xy 152.4 142.24)
+			(xy 137.16 111.76) (xy 137.16 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83cde455-8b90-4423-b578-34224c4e5abf")
+		(uuid "143aca0f-20a8-47ea-a491-d2bfd25c6f84")
 	)
 	(wire
 		(pts
-			(xy 139.7 106.68) (xy 152.4 106.68)
+			(xy 152.4 88.9) (xy 162.56 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "191403c6-dc1e-4be7-a8f2-37c111aa87c7")
+	)
+	(wire
+		(pts
+			(xy 137.16 76.2) (xy 137.16 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19352a0c-e6fb-4969-8110-224b28e84761")
+	)
+	(wire
+		(pts
+			(xy 177.8 99.06) (xy 152.4 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27ed0b9a-7852-462e-ac8d-5f30a839f6ff")
+	)
+	(wire
+		(pts
+			(xy 137.16 116.84) (xy 166.37 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88acab70-3ab6-4327-9283-e80bc5b02cd2")
+	)
+	(wire
+		(pts
+			(xy 177.8 116.84) (xy 166.37 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8994d534-17de-43bc-a299-236e2407f3a4")
+	)
+	(wire
+		(pts
+			(xy 152.4 93.98) (xy 162.56 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b62916d-4918-4483-9320-bed32abc975b")
+	)
+	(wire
+		(pts
+			(xy 166.37 101.6) (xy 166.37 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e92bb1-ac41-4e99-b6ee-c065b8be6606")
+	)
+	(wire
+		(pts
+			(xy 166.37 116.84) (xy 166.37 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97da1112-9ef1-4581-80ee-61efb16f09b8")
+	)
+	(wire
+		(pts
+			(xy 124.46 76.2) (xy 137.16 76.2)
 		)
 		(stroke
 			(width 0)
@@ -441,27 +539,57 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 147.32) (xy 152.4 147.32)
+			(xy 124.46 116.84) (xy 137.16 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6cb25a0-760d-45b5-8dc4-63c8f6befec5")
+		(uuid "af8a8255-f76c-47c1-9019-a99ead8dbc3f")
 	)
 	(wire
 		(pts
-			(xy 152.4 106.68) (xy 152.4 111.76)
+			(xy 177.8 111.76) (xy 177.8 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7020734-e45f-43be-93e3-6a6292e9a20d")
+		(uuid "d4493c1a-bae3-4fab-91ca-be9d45635c4f")
+	)
+	(wire
+		(pts
+			(xy 177.8 101.6) (xy 177.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5670609-8d72-429a-a692-f159f48d020e")
+	)
+	(wire
+		(pts
+			(xy 152.4 91.44) (xy 162.56 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e738f409-79ca-43cd-8a7e-3daa9c82d486")
+	)
+	(wire
+		(pts
+			(xy 166.37 96.52) (xy 152.4 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d74c35-9f3a-4046-9679-90b77f2ed7e8")
 	)
 	(hierarchical_label "VIN-"
 		(shape input)
-		(at 139.7 147.32 180)
+		(at 124.46 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -472,7 +600,7 @@
 	)
 	(hierarchical_label "CLK"
 		(shape output)
-		(at 180.34 123.19 0)
+		(at 162.56 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -483,7 +611,7 @@
 	)
 	(hierarchical_label "Data"
 		(shape output)
-		(at 180.34 116.84 0)
+		(at 162.56 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -494,7 +622,7 @@
 	)
 	(hierarchical_label "VIN+"
 		(shape input)
-		(at 139.7 106.68 180)
+		(at 124.46 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -505,7 +633,7 @@
 	)
 	(hierarchical_label "Latch"
 		(shape output)
-		(at 180.34 128.27 0)
+		(at 162.56 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -516,7 +644,8 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 195.58 125.73 0)
+		(at 166.37 106.68 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -524,30 +653,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2093d9f0-27a8-4594-b567-8275440e1928")
 		(property "Reference" "SW2"
-			(at 195.58 118.11 0)
+			(at 162.56 105.4099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 195.58 120.65 0)
+		(property "Value" "Mode"
+			(at 162.56 107.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 120.65 0)
+			(at 161.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -558,7 +688,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 120.65 0)
+			(at 161.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -569,7 +699,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 195.58 125.73 0)
+			(at 166.37 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -596,7 +726,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 195.58 140.97 0)
+		(at 177.8 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -607,27 +737,29 @@
 		(fields_autoplaced yes)
 		(uuid "3e28c853-e5ce-4014-bfd8-e98614e89250")
 		(property "Reference" "SW3"
-			(at 195.58 133.35 0)
+			(at 181.61 105.4099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 195.58 135.89 0)
+		(property "Value" "Roll"
+			(at 181.61 107.9499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 135.89 0)
+			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -638,7 +770,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 135.89 0)
+			(at 182.88 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -649,7 +781,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 195.58 140.97 0)
+			(at 177.8 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -676,7 +808,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Microchip_ATtiny:ATtiny85-20P")
-		(at 152.4 127 0)
+		(at 137.16 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -687,7 +819,7 @@
 		(fields_autoplaced yes)
 		(uuid "b645849e-c960-4edb-81ad-c92153db2e2f")
 		(property "Reference" "U1"
-			(at 138.43 125.7299 0)
+			(at 123.19 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -698,7 +830,7 @@
 			)
 		)
 		(property "Value" "ATtiny85-20P"
-			(at 138.43 128.2699 0)
+			(at 123.19 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -709,7 +841,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 152.4 127 0)
+			(at 137.16 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -721,7 +853,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf"
-			(at 152.4 127 0)
+			(at 137.16 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -732,7 +864,7 @@
 			)
 		)
 		(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"
-			(at 152.4 127 0)
+			(at 137.16 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
