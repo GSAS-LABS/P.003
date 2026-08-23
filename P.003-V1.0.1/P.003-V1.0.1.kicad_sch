@@ -5,8 +5,136 @@
 	(uuid "df58d102-266a-4360-93d3-4f9112ea1c17")
 	(paper "A4")
 	(lib_symbols)
+	(junction
+		(at 88.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d6e8677-07cd-45b4-9895-9e4f44250038")
+	)
+	(junction
+		(at 106.68 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "619f39c4-cb26-48ea-b18b-4703f190d914")
+	)
+	(junction
+		(at 115.57 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a032025e-3632-4e40-bd78-230272bac90c")
+	)
+	(wire
+		(pts
+			(xy 115.57 63.5) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d9cd32-0f3e-4e84-8619-47c95b84f665")
+	)
+	(wire
+		(pts
+			(xy 106.68 95.25) (xy 132.08 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b2a2f35-59bf-4795-b635-4530cafe6b0e")
+	)
+	(wire
+		(pts
+			(xy 88.9 82.55) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "555ac6a4-d0d6-4db0-a69a-c2ae83393e8f")
+	)
+	(wire
+		(pts
+			(xy 106.68 50.8) (xy 132.08 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "656652c3-5068-494d-ad6c-464531618e62")
+	)
+	(wire
+		(pts
+			(xy 106.68 69.85) (xy 106.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b90459-7588-40e7-9998-cc1ec5ca8656")
+	)
+	(wire
+		(pts
+			(xy 115.57 106.68) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abcfd391-a6ff-4c5b-967c-a788be1c1dd8")
+	)
+	(wire
+		(pts
+			(xy 115.57 63.5) (xy 132.08 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b022eb19-1ede-4eff-9f8e-d28110c8ed2d")
+	)
+	(wire
+		(pts
+			(xy 87.63 69.85) (xy 88.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3177a47-94a7-49da-a8eb-da35e423c6e3")
+	)
+	(wire
+		(pts
+			(xy 132.08 106.68) (xy 115.57 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d380979d-9109-474e-80c8-808f8a52f9d0")
+	)
+	(wire
+		(pts
+			(xy 106.68 50.8) (xy 106.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dced7d45-9b79-4999-a419-6a2f7eb7bd8f")
+	)
+	(wire
+		(pts
+			(xy 88.9 69.85) (xy 106.68 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8fe1a36-5463-459b-b688-d657652f99c5")
+	)
 	(sheet
-		(at 127 63.5)
+		(at 132.08 87.63)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +150,7 @@
 		)
 		(uuid "0ae06492-67cd-4ae2-b1d8-141278a1bb86")
 		(property "Sheetname" "Shift Register - 74HC595"
-			(at 127 62.7884 0)
+			(at 132.08 86.9184 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +161,7 @@
 			)
 		)
 		(property "Sheetfile" "shift_register_74HC595.kicad_sch"
-			(at 127 89.4846 0)
+			(at 132.08 113.6146 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -41,6 +169,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "VIN+" input
+			(at 132.08 95.25 180)
+			(uuid "5c97d503-a193-4b75-a48d-e251740eae32")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIN-" input
+			(at 132.08 106.68 180)
+			(uuid "bc797243-1ecf-4ca7-9440-21822f93bbd7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -52,7 +200,7 @@
 		)
 	)
 	(sheet
-		(at 127 101.6)
+		(at 210.82 87.63)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -68,7 +216,7 @@
 		)
 		(uuid "53cc1730-f527-46e2-84ce-397608e9107a")
 		(property "Sheetname" "7 - Segment Display"
-			(at 127 100.8884 0)
+			(at 210.82 86.9184 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -79,7 +227,7 @@
 			)
 		)
 		(property "Sheetfile" "7_segment_display.kicad_sch"
-			(at 127 127.5846 0)
+			(at 210.82 113.6146 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -135,6 +283,26 @@
 				(justify left top)
 			)
 		)
+		(pin "VIN+" output
+			(at 88.9 69.85 0)
+			(uuid "eadf6cc7-577f-4e24-8a76-c19231eb5664")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN-" output
+			(at 88.9 82.55 0)
+			(uuid "f5047a6e-9de9-42d3-8fd3-945049bf83b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "P.003-V1.0.1"
 				(path "/df58d102-266a-4360-93d3-4f9112ea1c17"
@@ -144,7 +312,7 @@
 		)
 	)
 	(sheet
-		(at 127 25.4)
+		(at 132.08 44.45)
 		(size 50.8 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -160,7 +328,7 @@
 		)
 		(uuid "dff66db9-4e6b-4703-bce1-fbe10cd7f0de")
 		(property "Sheetname" "Attiny85"
-			(at 127 24.6884 0)
+			(at 132.08 43.7384 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -171,7 +339,7 @@
 			)
 		)
 		(property "Sheetfile" "attiny_85.kicad_sch"
-			(at 127 51.3846 0)
+			(at 132.08 70.4346 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -179,6 +347,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CLK" output
+			(at 182.88 57.15 0)
+			(uuid "2c2d6f26-0ffc-46ee-8afc-ae4251455433")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Data" output
+			(at 182.88 63.5 0)
+			(uuid "420a14ba-6bf3-4654-81fa-0fad512b6d1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Latch" output
+			(at 182.88 50.8 0)
+			(uuid "e296db1b-3732-45af-bdf2-6b0c463dc709")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VIN+" input
+			(at 132.08 50.8 180)
+			(uuid "996689ee-4053-4693-8e5d-d2329d499ce6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VIN-" input
+			(at 132.08 63.5 180)
+			(uuid "94ebd390-62ab-43a1-96a4-344beef3998f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
