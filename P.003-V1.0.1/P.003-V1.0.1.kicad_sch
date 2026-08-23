@@ -1,0 +1,198 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "df58d102-266a-4360-93d3-4f9112ea1c17")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 127 63.5)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0ae06492-67cd-4ae2-b1d8-141278a1bb86")
+		(property "Sheetname" "Shift Register - 74HC595"
+			(at 127 62.7884 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "shift_register_74HC595.kicad_sch"
+			(at 127 89.4846 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "P.003-V1.0.1"
+				(path "/df58d102-266a-4360-93d3-4f9112ea1c17"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 101.6)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "53cc1730-f527-46e2-84ce-397608e9107a")
+		(property "Sheetname" "7 - Segment Display"
+			(at 127 100.8884 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "7_segment_display.kicad_sch"
+			(at 127 127.5846 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "P.003-V1.0.1"
+				(path "/df58d102-266a-4360-93d3-4f9112ea1c17"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 63.5)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "62aace65-704f-4466-9cca-5ca7dd2311f0")
+		(property "Sheetname" "Power Supply"
+			(at 38.1 62.7884 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply.kicad_sch"
+			(at 38.1 89.4846 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "P.003-V1.0.1"
+				(path "/df58d102-266a-4360-93d3-4f9112ea1c17"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 25.4)
+		(size 50.8 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "dff66db9-4e6b-4703-bce1-fbe10cd7f0de")
+		(property "Sheetname" "Attiny85"
+			(at 127 24.6884 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "attiny_85.kicad_sch"
+			(at 127 51.3846 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "P.003-V1.0.1"
+				(path "/df58d102-266a-4360-93d3-4f9112ea1c17"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
