@@ -260,7 +260,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "footprint_link_issues|1308100|952500|48d62466-340e-4da8-8cd0-7b3bc2d339bd|00000000-0000-0000-0000-000000000000|||",
+        "Estou cinte, ma já foi validado"
+      ]
+    ],
     "meta": {
       "version": 0
     },
