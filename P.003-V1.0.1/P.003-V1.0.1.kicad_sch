@@ -9,6 +9,7 @@
 		(date "2026-08-23")
 		(rev "01")
 		(company "GSAS - Labs")
+		(comment 1 "Ligações - OK")
 	)
 	(lib_symbols)
 	(junction

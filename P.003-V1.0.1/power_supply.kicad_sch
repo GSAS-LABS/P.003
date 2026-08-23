@@ -9,6 +9,8 @@
 		(date "2026-08-23")
 		(rev "01")
 		(company "GSAS - Labs")
+		(comment 1 "Ligações - OK")
+		(comment 2 "Footprints - OK")
 	)
 	(lib_symbols
 		(symbol "Device:Battery_Cell"
