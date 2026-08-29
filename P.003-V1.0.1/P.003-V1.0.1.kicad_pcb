@@ -286,6 +286,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "25894990-54f3-4fea-804a-499c885f3cc5")
 		(at 112 51.98)
@@ -1470,6 +1471,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "42e7e22d-75f7-4ca8-90b2-0d718a93cb4c")
 		(at 146 51.98)
