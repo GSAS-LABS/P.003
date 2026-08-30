@@ -148,6 +148,29 @@ The device supports the following dice types:
 > Component prices may vary depending on supplier, quantity, shipping costs, and location.
 
 > PCB manufacturing costs will be added once the board fabrication service and order quantity are defined.
+
+---
+
+# 📐 KiCad PCB Configuration
+
+The PCB uses custom routing values configured specifically for this project.
+
+## 🛤️ Track Widths
+
+| Track Width | Recommended Use |
+|---|---|
+| 0.25 mm | Signal routing |
+| 0.40 mm | Power and higher-current connections |
+
+## 🔘 Via Configuration
+
+| Parameter | Value |
+|---|---:|
+| Via Diameter | 0.8 mm |
+| Drill Hole | 0.4 mm |
+
+> These values are configured as custom routing presets in the KiCad project and should be maintained when modifying or extending the PCB design.
+
 ---
 
 # 🛠 Development Environment
@@ -244,7 +267,7 @@ GND    ──────────── GND
 
 ---
 
-# 🧑‍🔬 GSAS-LABS
+# 🐧 GSAS-LABS
 
 GSAS-LABS is an independent engineering laboratory dedicated to the design, development, and exploration of electronics and software projects. It combines hardware and software engineering to create practical projects focused on embedded systems, microcontrollers, PCB design, and software development.
 
