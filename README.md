@@ -131,7 +131,7 @@ The device supports the following dice types:
 | R2 | Resistor | 1 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
 | R3–R10 | Resistor | 470 Ω | 8 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.40 |
 | SW1 | Slide Switch | OS102011MS2QN1C | 1 | [Eletrogate](https://www.eletrogate.com/chave-ss12f46-3-terminais) | R$ 0.50  | R$ 0.50  |
-| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Eletrogate](https://www.eletrogate.com/push-button-chave-tactil-6x6x5mm) | R$0.15  | R$0.30  |
+| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Eletrogate](https://www.eletrogate.com/push-button-chave-tactil-6x6x5mm) | R$ 0.15  | R$ 0.30  |
 | U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Multcomercial](https://www.multcomercial.com.br/microcontrolador-attiny85-20pu-dip08-cod-loja-5008-atmel.html) | R$ 26.00 | R$ 26.00 |
 | U2 | Shift Register | SN74HC595N , DIP-16 | 1 | [Multcomercial](https://www.multcomercial.com.br/circuito-integrado-sn74hc595n-dip-16-cod-loja-2687-texas.html) | R$ 2.52  | R$ 2.52  |
 
