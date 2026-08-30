@@ -293,5 +293,9 @@ Use of the GSAS-LABS name or logo does not imply endorsement, affiliation, or ap
 ---
 
 <p align="center">
+  <strong>Experiment · Build · Learn · Share</strong>
+</p>
+
+<p align="center">
   Made with ❤️ by GSAS-LABS
 </p>
