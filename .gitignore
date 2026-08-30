@@ -3,5 +3,4 @@
 .DS_Store
 .pio
 .history
-.lck
-.kicad_pro.lck
+*.lck
