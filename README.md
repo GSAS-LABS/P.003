@@ -121,18 +121,33 @@ The device supports the following dice types:
   <img src="Images/hardware_image.png" alt="P.003 PCB" width="300">
 </p>
 
-| Reference | Component | Value / Part | Quantity | Purchase Link |
-|---|---|---|---:|---|
-| U1 | Microcontroller | ATtiny85 | 1 | TBD |
-| U2 | Shift Register | 74HC595 | 1 | TBD |
-| DS1 | Display | 7-Segment Display | 1 | TBD |
-| R1 | Resistor | TBD | 1 | TBD |
-| R2 | Resistor | TBD | 1 | TBD |
-| R3 | Resistor | TBD | 1 | TBD |
-| C1 | Capacitor | TBD | 1 | TBD |
-| SW1 | Push Button | TBD | 1 | TBD |
-| BT1 | Battery Holder | TBD | 1 | TBD |
+| Reference | Component | Value / Part | Quantity | Purchase Link | Unit Price | Total |
+|---|---|---|---:|---|---:|---:|
+| AFF1 | 7-Segment Display | LTS6760 / LTS6780 | 1 | TBD | TBD | TBD |
+| BT1 | Battery Holder | Keystone 3008, 1x CR2450 | 1 | TBD | TBD | TBD |
+| D1 | LED | 3 mm Through-Hole LED | 1 | TBD | TBD | TBD |
+| Q1 | P-Channel MOSFET | BS250 | 1 | TBD | TBD | TBD |
+| R1 | Resistor | 100 kΩ | 1 | TBD | TBD | TBD |
+| R2 | Resistor | 1 kΩ | 1 | TBD | TBD | TBD |
+| R3–R10 | Resistor | 470 Ω | 8 | TBD | TBD | TBD |
+| SW1 | Slide Switch | OS102011MS2QN1C | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/CK/OS102011MS2QN1C?qs=FgXbtR4Gg7KP4hs8ueQ7Wg%3D%3D) | $0.75  | $0.75  |
+| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Mouser](https://br.mouser.com/pt/ProductDetail/CK/PTS645SH43SMTR92-LFS?qs=sGAEpiMZZMtFyPk3yBMYYJiairl7NrMVJzbk1EzHW08%3D) | $0.34  | $0.68  |
+| U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/Microchip-Technology/ATTINY85-20PU?qs=8jWQYweyg6NCiiaOb5GI9Q%3D%3D) | $1.66 | $1.66 |
+| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/Texas-Instruments/SN74HC595N?qs=IEl3ej0IqwBTHkYa8XPoMQ%3D%3D) | $1.86  | $1.86  |
 
+---
+
+## 💰 Estimated Cost
+
+| Item | Estimated Cost |
+|---|---:|
+| Electronic Components | TBD |
+| PCB Manufacturing | TBD |
+| **Estimated Total Project Cost** | **TBD** |
+
+> Component prices may vary depending on supplier, quantity, shipping costs, and location.
+
+> PCB manufacturing costs will be added once the board fabrication service and order quantity are defined.
 ---
 
 # 🛠 Development Environment
