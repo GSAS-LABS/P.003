@@ -123,17 +123,17 @@ The device supports the following dice types:
 
 | Reference | Component | Value / Part | Quantity | Purchase Link | Unit Price | Total |
 |---|---|---|---:|---|---:|---:|
-| AFF1 | 7-Segment Display | LTS6760 / LTS6780 | 1 | TBD | TBD | TBD |
-| BT1 | Battery Holder | Keystone 3008, 1x CR2450 | 1 | TBD | TBD | TBD |
-| D1 | LED | 3 mm Through-Hole LED | 1 | TBD | TBD | TBD |
-| Q1 | P-Channel MOSFET | BS250 | 1 | TBD | TBD | TBD |
-| R1 | Resistor | 100 kΩ | 1 | TBD | TBD | TBD |
-| R2 | Resistor | 1 kΩ | 1 | TBD | TBD | TBD |
-| R3–R10 | Resistor | 470 Ω | 8 | TBD | TBD | TBD |
-| SW1 | Slide Switch | OS102011MS2QN1C | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/CK/OS102011MS2QN1C?qs=FgXbtR4Gg7KP4hs8ueQ7Wg%3D%3D) | $0.75  | $0.75  |
-| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Mouser](https://br.mouser.com/pt/ProductDetail/CK/PTS645SH43SMTR92-LFS?qs=sGAEpiMZZMtFyPk3yBMYYJiairl7NrMVJzbk1EzHW08%3D) | $0.34  | $0.68  |
-| U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/Microchip-Technology/ATTINY85-20PU?qs=8jWQYweyg6NCiiaOb5GI9Q%3D%3D) | $1.66 | $1.66 |
-| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | [Mouser](https://br.mouser.com/pt/ProductDetail/Texas-Instruments/SN74HC595N?qs=IEl3ej0IqwBTHkYa8XPoMQ%3D%3D) | $1.86  | $1.86  |
+| AFF1 | 7-Segment Display | Common Cathod  | 1 | [Eletrogate](https://www.eletrogate.com/display-de-7-segmentos-com-1-digito-catodo) | R$ 2.50 | R$ 2.50 |
+| BT1 | Battery Holder | BAT-HLD-006-SMT, 1x CR2450 | 1 | [Mouser](https://br.mouser.com/en/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=sGAEpiMZZMtz8P%2FeuiupSfFU6bUhTAYAC1i0Adw6iu0%3D) | R$ 2.53 | R$ 2.53 |
+| D1 | LED | 3 mm Through-Hole LED | 1 | [Eletrogate](https://www.eletrogate.com/led-difuso-3mm-amarelo) | R$ 0.15 | R$ 0.15 |
+| Q1 | P-Channel MOSFET | BS250 | 1 | [Aliexpress](https://pt.aliexpress.com/item/1005005545337317.html) | R$ 2.50 | R$ 2.50 |
+| R1 | Resistor | 100 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
+| R2 | Resistor | 1 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
+| R3–R10 | Resistor | 470 Ω | 8 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.40 |
+| SW1 | Slide Switch | OS102011MS2QN1C | 1 | [Eletrogate](https://www.eletrogate.com/chave-ss12f46-3-terminais) | R$ 0.50  | R$ 0.50  |
+| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Eletrogate](https://www.eletrogate.com/push-button-chave-tactil-6x6x5mm) | R$0.15  | R$0.30  |
+| U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Multcomercial](https://www.multcomercial.com.br/microcontrolador-attiny85-20pu-dip08-cod-loja-5008-atmel.html) | R$ 26.00 | R$ 26.00 |
+| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | [Multcomercial](https://www.multcomercial.com.br/circuito-integrado-sn74hc595n-dip-16-cod-loja-2687-texas.html) | R$ 2.52  | R$ 2.52  |
 
 ---
 
@@ -141,7 +141,7 @@ The device supports the following dice types:
 
 | Item | Estimated Cost |
 |---|---:|
-| Electronic Components | TBD |
+| Electronic Components | RS37.50 |
 | PCB Manufacturing | TBD |
 | **Estimated Total Project Cost** | **TBD** |
 
