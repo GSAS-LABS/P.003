@@ -250,13 +250,13 @@ This project combines software and hardware, with each part released under its c
 
 ## 💻 Firmware
 
-The firmware is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+The firmware is licensed under the [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html).
 
 The firmware can be used, studied, modified, and redistributed. Any distributed modifications must remain open-source and be released under the GPLv3.
 
 ## 🔧 Hardware
 
-The hardware design is licensed under the **CERN Open Hardware Licence v2**.
+The hardware design is licensed under the [CERN Open Hardware Licence v2 (CERN-OHL-S)](https://ohwr.org/licences/).
 
 This includes the hardware design files, such as:
 
