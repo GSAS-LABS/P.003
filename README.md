@@ -142,7 +142,7 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 | Operating State | Current | Theoretical Battery Life |
 |---|---:|---:|
 | Standby — LED installed | ~0.65 mA | ~954 hours / ~40 days |
-| Standby — LED not installed | ~0.05 mA | ~12,400 hours / ~517 days / ~1.42 years |
+| Standby — LED not installed | ~0.05 mA | ~517 days / ~1.42 years |
 | All display segments ON continuously | ~7.5 mA | ~83 hours / ~3.4 days |
 
 > Battery life values are theoretical estimates based on the nominal 620 mAh battery capacity and measured current consumption. Actual battery life will be lower and depends on battery voltage, discharge characteristics, temperature, pulse loads, and the device's operating cycle.
