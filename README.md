@@ -115,6 +115,41 @@ The device supports the following dice types:
 > In D10 mode, the generated values range from `0` to `9`.
 
 ---
+# 🔋 Battery & Power Consumption
+
+The board is powered by a **CR2450 lithium coin cell**.
+
+Power consumption depends on the display state and whether the power indicator LED is installed.
+
+## Power Consumption
+
+| Operating State | Approx. Current |
+|---|---:|
+| All 7-segment display segments ON | ~7.5 mA |
+| Standby / Sleep — power indicator LED installed | ~0.65 mA |
+| Standby / Sleep — power indicator LED not installed | ~0.05 mA |
+
+The firmware uses the ATtiny85 **Power-down sleep mode** when the device is not being used. The ADC and unused peripherals are disabled during low-power operation to minimize battery consumption.
+
+The power indicator LED is connected directly to the power circuit and therefore consumes approximately **0.60 mA continuously** when the board is switched ON. This increases the standby consumption from approximately **0.05 mA to 0.65 mA**.
+
+For maximum battery life, omitting the power indicator LED significantly reduces the standby current.
+
+## Estimated Battery Life
+
+Using a CR2450 with a nominal capacity of approximately **620 mAh**:
+
+| Operating State | Current | Theoretical Battery Life |
+|---|---:|---:|
+| Standby — LED installed | ~0.65 mA | ~954 hours / ~40 days |
+| Standby — LED not installed | ~0.05 mA | ~12,400 hours / ~517 days / ~1.42 years |
+| All display segments ON continuously | ~7.5 mA | ~83 hours / ~3.4 days |
+
+> Battery life values are theoretical estimates based on the nominal 620 mAh battery capacity and measured current consumption. Actual battery life will be lower and depends on battery voltage, discharge characteristics, temperature, pulse loads, and the device's operating cycle.
+
+> The CR2450's rated capacity is specified under particular discharge conditions. Continuous operation at currents significantly above the manufacturer's standard drain can result in less usable capacity than the nominal 620 mAh rating.
+
+---
 # 🧾 PCB BOM
 
 <p align="center">
