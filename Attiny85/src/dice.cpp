@@ -381,6 +381,12 @@ void handleSleep() {
     if (!sleepRequested) {
         return;
     }
+
+    // Wait until both buttons are released
+    if (digitalRead(PB3) == LOW || digitalRead(PB4) == LOW) {
+        return;
+    }
+
     sleepRequested = false;
     powerSleep();
 }
