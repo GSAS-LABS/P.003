@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Power Supply")
-		(date "2026-08-23")
+		(date "2026-09-13")
 		(rev "01")
 		(company "GSAS - Labs")
 		(comment 1 "Ligações - OK")
@@ -1939,7 +1939,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "2.2K"
 			(at 165.1 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
