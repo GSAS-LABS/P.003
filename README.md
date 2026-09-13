@@ -190,6 +190,13 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 
 The PCB uses custom routing values configured specifically for this project.
 
+## 📏 Board Dimensions
+
+| Parameter | Dimension |
+|---|---:|
+| Width | 42 mm |
+| Height | 78.5 mm |
+
 ## 🛤️ Track Widths
 
 | Track Width | Recommended Use |
