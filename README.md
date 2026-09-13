@@ -128,8 +128,8 @@ The device supports the following dice types:
 | D1 | LED | 3 mm Through-Hole LED | 1 | [Eletrogate](https://www.eletrogate.com/led-difuso-3mm-amarelo) | R$ 0.15 | R$ 0.15 |
 | Q1 | P-Channel MOSFET | BS250 | 1 | [Aliexpress](https://pt.aliexpress.com/item/1005005545337317.html) | R$ 2.50 | R$ 2.50 |
 | R1 | Resistor | 100 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
-| R2 | Resistor | 1 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
-| R3–R10 | Resistor | 470 Ω | 8 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.40 |
+| R2 | Resistor | 2.2 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
+| R3–R10 | Resistor | 1K Ω | 8 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.40 |
 | SW1 | Slide Switch | OS102011MS2QN1C | 1 | [Eletrogate](https://www.eletrogate.com/chave-ss12f46-3-terminais) | R$ 0.50  | R$ 0.50  |
 | SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Eletrogate](https://www.eletrogate.com/push-button-chave-tactil-6x6x5mm) | R$ 0.15  | R$ 0.30  |
 | U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Multcomercial](https://www.multcomercial.com.br/microcontrolador-attiny85-20pu-dip08-cod-loja-5008-atmel.html) | R$ 26.00 | R$ 26.00 |
