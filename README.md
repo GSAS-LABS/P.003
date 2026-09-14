@@ -195,7 +195,7 @@ The PCB uses custom routing values configured specifically for this project.
 | Parameter | Dimension |
 |---|---:|
 | Width | 42 mm |
-| Height | 78.5 mm |
+| Height | 78 mm |
 
 ## 🛤️ Track Widths
 
