@@ -177,8 +177,8 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 | Item | Estimated Cost |
 |---|---:|
 | Electronic Components | R$ 37.50 |
-| PCB Manufacturing | TBD |
-| **Estimated Total Project Cost** | **TBD** |
+| PCB Manufacturing | R$ 8,50 |
+| **Estimated Total Project Cost** | **R$ 46** |
 
 > Component prices may vary depending on supplier, quantity, shipping costs, and location.
 
