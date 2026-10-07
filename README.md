@@ -156,19 +156,19 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
   <img src="Images/hardware_image.png" alt="P.003 PCB" width="300">
 </p>
 
-| Reference | Component | Value / Part | Quantity | Purchase Link | Unit Price | Total |
+| Reference | Component | Value / Part | Quantity | Unit Price | Total |
 |---|---|---|---:|---|---:|---:|
-| AFF1 | 7-Segment Display | Common Cathod  | 1 | [Eletrogate](https://www.eletrogate.com/display-de-7-segmentos-com-1-digito-catodo) | R$ 2.50 | R$ 2.50 |
-| BT1 | Battery Holder | BAT-HLD-006-SMT, 1x CR2450 | 1 | [Mouser](https://br.mouser.com/en/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-006-SMT?qs=sGAEpiMZZMtz8P%2FeuiupSfFU6bUhTAYAC1i0Adw6iu0%3D) | R$ 2.53 | R$ 2.53 |
-| D1 | LED | 3 mm Through-Hole LED | 1 | [Eletrogate](https://www.eletrogate.com/led-difuso-3mm-amarelo) | R$ 0.15 | R$ 0.15 |
-| Q1 | P-Channel MOSFET | BS250 | 1 | [Aliexpress](https://pt.aliexpress.com/item/1005005545337317.html) | R$ 2.50 | R$ 2.50 |
-| R1 | Resistor | 100 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
-| R2 | Resistor | 2.2 kΩ | 1 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.05 |
-| R3–R10 | Resistor | 1K Ω | 8 | [Multcomercial](https://www.multcomercial.com.br/resistor-de-filme-de-carbono-1-4-de-watt-cr25-5-de-tolerancia-0-22r-a-10m.html) | R$ 0.05 | R$ 0.40 |
-| SW1 | Slide Switch | Micro Chave SS12D07 | 1 | [Smart Kit](https://www.smartkits.com.br/micro-chave-hh-3t-2-posicoes-ss12d07) | R$ 0.50  | R$ 0.50  |
-| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | [Eletrogate](https://www.eletrogate.com/push-button-chave-tactil-6x6x5mm) | R$ 0.15  | R$ 0.30  |
-| U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | [Multcomercial](https://www.multcomercial.com.br/microcontrolador-attiny85-20pu-dip08-cod-loja-5008-atmel.html) | R$ 26.00 | R$ 26.00 |
-| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | [Multcomercial](https://www.multcomercial.com.br/circuito-integrado-sn74hc595n-dip-16-cod-loja-2687-texas.html) | R$ 2.52  | R$ 2.52  |
+| AFF1 | 7-Segment Display | Common Cathod  | 1 | R$ 2.50 | R$ 2.50 |
+| BT1 | Battery Holder | BAT-HLD-006-SMT, 1x CR2450 | 1 | R$ 2.53 | R$ 2.53 |
+| D1 | LED | 3 mm Through-Hole LED | 1 | R$ 0.15 | R$ 0.15 |
+| Q1 | P-Channel MOSFET | BS250 | 1 | R$ 2.50 | R$ 2.50 |
+| R1 | Resistor | 100 kΩ | 1 | R$ 0.05 | R$ 0.05 |
+| R2 | Resistor | 2.2 kΩ | 1 | R$ 0.05 | R$ 0.05 |
+| R3–R10 | Resistor | 1K Ω | 8 | R$ 0.05 | R$ 0.40 |
+| SW1 | Slide Switch | Micro Chave SS12D07 | 1 | R$ 0.50  | R$ 0.50  |
+| SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | R$ 0.15  | R$ 0.30  |
+| U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | R$ 26.00 | R$ 26.00 |
+| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | R$ 2.52  | R$ 2.52  |
 
 ---
 
