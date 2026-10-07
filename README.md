@@ -157,7 +157,7 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 </p>
 
 | Reference | Component | Value / Part | Quantity | Unit Price | Total |
-|---|---|---|---:|---|---:|---:|
+|---|---|---|---:|---|---:|
 | AFF1 | 7-Segment Display | Common Cathod  | 1 | R$ 2.50 | R$ 2.50 |
 | BT1 | Battery Holder | BAT-HLD-006-SMT, 1x CR2450 | 1 | R$ 2.53 | R$ 2.53 |
 | D1 | LED | 3 mm Through-Hole LED | 1 | R$ 0.15 | R$ 0.15 |
@@ -168,7 +168,7 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 | SW1 | Slide Switch | Micro Chave SS12D07 | 1 | R$ 0.50  | R$ 0.50  |
 | SW2-SW3 | Push Button | 6 mm Tactile Switch | 2 | R$ 0.15  | R$ 0.30  |
 | U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | R$ 26.00 | R$ 26.00 |
-| U2 | Shift Register | SN74HC595N , DIP-16 | 1 | R$ 2.52  | R$ 2.52  |
+| U2 | Shift Register | SN74HC595N, DIP-16 | 1 | R$ 2.52  | R$ 2.52 |
 
 ---
 
