@@ -368,3 +368,9 @@ Use of the GSAS-LABS name or logo does not imply endorsement, affiliation, or ap
 <p align="center">
   Made with ❤️ by GSAS-LABS
 </p>
+
+<p align="center">
+  <a href="https://github.com/sponsors/gustavoSAS">
+    <img src="Images/sponsor-button.svg" alt="Sponsor gustavoSAS" height="36">
+  </a>
+</p>
