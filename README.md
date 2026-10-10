@@ -22,7 +22,11 @@
 # 🎲 Digital Dice
 
 <p align="center">
-  <img src="Images/hardware_vertical_image.png" alt="P.003 PCB" width="500">
+  <img src="Images/hardware_image.png" alt="P.003 Hardware" width="250">
+  &nbsp;&nbsp;&nbsp;
+  <img src="Images/pcb.png" alt="P.003 PCB" width="250">
+  &nbsp;&nbsp;&nbsp;
+  <img src="Images/pcb_soldered .png" alt="P.003 Assembled PCB" width="250">
 </p>
 
 P.003 is a compact digital dice designed around the ATtiny85 microcontroller.
@@ -153,7 +157,7 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 # 🧾 PCB BOM
 
 <p align="center">
-  <img src="Images/hardware_image.png" alt="P.003 PCB" width="300">
+  <img src="Images/hardware_vertical_image.png" alt="P.003 PCB" width="500">
 </p>
 
 | Reference | Component | Value / Part | Quantity | Unit Price | Total |
