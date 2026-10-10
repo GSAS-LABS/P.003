@@ -17,8 +17,6 @@
   Digital dice based on an ATtiny85 and 74HC595. Supports D4, D6, D8, and D10 modes, with configurable rolling animation, button-based type selection, EEPROM persistence, and low-power sleep mode for extended battery life.
 </p>
 
----
-
 # 🎲 Digital Dice
 
 <p align="center">
@@ -42,7 +40,6 @@ The dice supports multiple modes and remembers the selected configuration betwee
 - 🎲 D8
 - 🎲 D10
 
----
 # 🎮 How to Use
 
 ## Power Switch
@@ -55,8 +52,6 @@ When the board is powered, the power indicator LED turns on, indicating that the
 
 Move the switch to the **OFF** position when the device is not being used. Turning the board off helps preserve battery life.
 
----
-
 ## Power Indicator
 
 A dedicated LED indicates the power status of the board.
@@ -65,8 +60,6 @@ A dedicated LED indicates the power status of the board.
 - **LED OFF** — The board is switched off.
 
 For maximum battery life, turn the board off when it will not be used for an extended period.
-
----
 
 ## Buttons
 
@@ -103,7 +96,6 @@ After confirming the selection with a long press, the decimal point turns off.
 
 The confirmed dice type is remembered by the device and automatically restored the next time the board is powered on.
 
----
 
 ## Dice Modes
 
@@ -118,7 +110,6 @@ The device supports the following dice types:
 
 > In D10 mode, the generated values range from `0` to `9`.
 
----
 # 🔋 Battery & Power Consumption
 
 The board is powered by a **CR2450 lithium coin cell**.
@@ -153,7 +144,6 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 
 > The CR2450's rated capacity is specified under particular discharge conditions. Continuous operation at currents significantly above the manufacturer's standard drain can result in less usable capacity than the nominal 620 mAh rating.
 
----
 # 🧾 PCB BOM
 
 <p align="center">
@@ -174,8 +164,6 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 | U1 | Microcontroller | ATTINY85-20PU, DIP-8 | 1 | R$ 26.00 | R$ 26.00 |
 | U2 | Shift Register | SN74HC595N, DIP-16 | 1 | R$ 2.52  | R$ 2.52 |
 
----
-
 ## 💰 Estimated Cost
 
 | Item | Estimated Cost |
@@ -187,8 +175,6 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 > Component prices may vary depending on supplier, quantity, shipping costs, and location.
 
 > PCB manufacturing costs will be added once the board fabrication service and order quantity are defined.
-
----
 
 # 📐 KiCad PCB Configuration
 
@@ -217,8 +203,6 @@ The PCB uses custom routing values configured specifically for this project.
 
 > These values are configured as custom routing presets in the KiCad project and should be maintained when modifying or extending the PCB design.
 
----
-
 # 🛠 Development Environment
 
 The firmware is developed and built using PlatformIO.
@@ -230,8 +214,6 @@ The project includes a Makefile that simplifies the most common development task
 - macOS
 - Homebrew
 - PlatformIO
-
----
 
 # ⚙️ Makefile
 
@@ -273,19 +255,15 @@ make fuses
 make upload
 ```
 
----
-
 # 🔌 Programming the ATtiny85
 
 The ATtiny85 is programmed using the ISP protocol.
 
 The required signals are:
 
-
 <p align="center">
   <img src="Images/usbasp_image.png" alt="USBasp Programming Header" width="750">
 </p>
-
 
 | Signal | Function |
 |---|---|
@@ -311,8 +289,6 @@ VCC    ──────────── VCC
 GND    ──────────── GND
 ```
 
----
-
 # 🐧 GSAS-LABS
 
 GSAS-LABS is an independent engineering laboratory dedicated to the design, development, and exploration of electronics and software projects. It combines hardware and software engineering to create practical projects focused on embedded systems, microcontrollers, PCB design, and software development.
@@ -325,8 +301,6 @@ Areas of interest include:
 - Hardware prototyping
 - Electronics
 - Software engineering
-
----
 
 # 📜 License
 
