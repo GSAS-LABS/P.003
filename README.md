@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/PlatformIO-Embedded-orange" alt="PlatformIO">
   <img src="https://img.shields.io/badge/PCB-2_Layer-green" alt="2 Layer PCB">
   <img src="https://img.shields.io/badge/Power-3V-success" alt="3V">
-  <img src="https://img.shields.io/badge/Status-Development-yellow" alt="Development">
+  <img src="https://img.shields.io/badge/Status-Ready-brightgreen" alt="Ready">
 </p>
 
 <p align="center">
