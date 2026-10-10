@@ -14,6 +14,16 @@
 </p>
 
 <p align="center">
+  <a href="https://buymeacoffee.com/gsas.labs">
+    <img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+      alt="Buy Me a Coffee"
+      width="180"
+    />
+  </a>
+</p>
+
+<p align="center">
   Digital dice based on an ATtiny85 and 74HC595. Supports D4, D6, D8, and D10 modes, with configurable rolling animation, button-based type selection, EEPROM persistence, and low-power sleep mode for extended battery life.
 </p>
 
@@ -344,7 +354,11 @@ Use of the GSAS-LABS name or logo does not imply endorsement, affiliation, or ap
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/gustavoSAS">
-    <img src="Images/sponsor-button.svg" alt="Sponsor gustavoSAS" height="36">
+  <a href="https://buymeacoffee.com/gsas.labs">
+    <img
+      src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+      alt="Buy Me a Coffee"
+      width="180"
+    />
   </a>
 </p>
