@@ -24,7 +24,7 @@
   &nbsp;&nbsp;&nbsp;
   <img src="Images/pcb.png" alt="P.003 PCB" width="250">
   &nbsp;&nbsp;&nbsp;
-  <img src="Images/pcb_soldered .png" alt="P.003 Assembled PCB" width="250">
+  <img src="Images/pcb_soldered.png" alt="P.003 Assembled PCB" width="250">
 </p>
 
 P.003 is a compact digital dice designed around the ATtiny85 microcontroller.
@@ -169,7 +169,7 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 | Item | Estimated Cost |
 |---|---:|
 | Electronic Components | R$ 37.50 |
-| PCB Manufacturing | R$ 8,50 |
+| PCB Manufacturing | R$ 8.50 |
 | **Estimated Total Project Cost** | **R$ 46** |
 
 > Component prices may vary depending on supplier, quantity, shipping costs, and location.
