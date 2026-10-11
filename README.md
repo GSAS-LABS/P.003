@@ -18,7 +18,7 @@
     <img
       src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
       alt="Buy Me a Coffee"
-      width="180"
+      width="120"
     />
   </a>
 </p>
@@ -358,7 +358,7 @@ Use of the GSAS-LABS name or logo does not imply endorsement, affiliation, or ap
     <img
       src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
       alt="Buy Me a Coffee"
-      width="180"
+      width="120"
     />
   </a>
 </p>
