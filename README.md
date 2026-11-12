@@ -187,6 +187,29 @@ Using a CR2450 with a nominal capacity of approximately **620 mAh**:
 
 > PCB manufacturing costs will be added once the board fabrication service and order quantity are defined.
 
+# 📐 Schematic
+
+The schematic is organized into the following functional blocks:
+
+<p align="center">
+  <img src="Images/Schematic/power_supply.png" alt="Power Supply Schematic" width="380">
+  &nbsp;&nbsp;&nbsp;
+  <img src="Images/Schematic/attiny85.png" alt="ATtiny85 Schematic" width="380">
+</p>
+
+<p align="center">
+  <img src="Images/Schematic/shift_register.png" alt="74HC595 Shift Register Schematic" width="380">
+  &nbsp;&nbsp;&nbsp;
+  <img src="Images/Schematic/display.png" alt="7-Segment Display Schematic" width="380">
+</p>
+
+| Block | Description |
+|---|---|
+| 🔋 Power Supply | CR2450 coin cell, ON/OFF switch, and power indicator LED. |
+| 🧠 ATtiny85 | Main microcontroller. |
+| 🔁 74HC595 Shift Register | Drives the display segments using a minimal number of MCU pins. |
+| 🔢 7-Segment Display | Shows the rolled result. |
+
 # 📐 KiCad PCB Configuration
 
 The PCB uses custom routing values configured specifically for this project.
